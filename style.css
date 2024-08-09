@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', 'Consolas', 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #d4d4d4;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    transition: color 0.3s ease;
+}
+
+h1:hover {
+    color: #569cd6;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #569cd6;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.container {
+    background: linear-gradient(135deg, #2c2c2c, #252526);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    max-width: 1200px;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+.selection {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+select {
+    height: 35px;
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #3c3c3c;
+    background-color: #3c3c3c;
+    color: #d4d4d4;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+select:hover {
+    background-color: #569cd6;
+    color: #fff;
+}
+
+.code {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #3c3c3c;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    font-size: 16px;
+    resize: none;
+    line-height: 1.6;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #569cd6;
+}
+
+.output {
+    margin-top: 20px;
+}
+
+.output h4 {
+    margin-bottom: 10px;
+    color: #569cd6;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.output p {
+    background: #1e1e1e;
+    padding: 15px;
+    height: 200px;
+    border-radius: 5px;
+    border: 1px solid #3c3c3c;
+    overflow-y: auto;
+    color: #d4d4d4;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: border-color 0.3s ease;
+}
+
+.output p:focus {
+    border-color: #569cd6;
+}
+
+
+button {
+    display: block;
+    width: 200px;
+    padding: 15px;
+    margin: 20px auto;
+    background: #007acc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: #005a9e;
+    transform: translateY(-3px);
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
